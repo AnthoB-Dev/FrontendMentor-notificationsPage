@@ -1,0 +1,123 @@
+.hidden {
+  display: none !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "jakarta";
+  font-size: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "jakarta";
+  src: url("../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+#container {
+  width: 100vw;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+#container #notifHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0 25px;
+}
+#container #notifHeader div {
+  display: flex;
+  gap: 10px;
+}
+#container #notifHeader div h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+#container #notifHeader div #notifCount {
+  font-size: 16px;
+  font-weight: 800;
+  width: 32px;
+  height: 25px;
+  background-color: #0A317B;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #E5EFFA;
+}
+#container #notifHeader a {
+  color: #5E6778;
+}
+#container #notifCards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#container #notifCards .unread {
+  background-color: #F7FAFD;
+  border-radius: 10px;
+}
+#container #notifCards .card {
+  display: flex;
+  padding: 15px;
+}
+#container #notifCards .card .profilePic {
+  width: 39px;
+  min-height: 39px;
+  max-height: 39px;
+  margin-right: 13px;
+}
+#container #notifCards .card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+#container #notifCards .card .content p .postTitle {
+  color: #5E6778;
+  font-weight: 700;
+  margin-left: 4px;
+}
+#container #notifCards .card .content p .groupTitle {
+  color: #0A317B;
+  font-weight: 800;
+  margin-left: 4px;
+}
+#container #notifCards .card .content .timeAgo {
+  color: #939DAE;
+}
+#container #notifCards .card .content .message {
+  margin-top: 9px;
+  border: solid 1px #DDE7EE;
+  border-radius: 5px;
+  padding: 10px 9px;
+}
+
+.bold {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.pImage {
+  display: flex;
+}
+.pImage img {
+  width: 39px;
+  min-height: 39px;
+  max-height: 39px;
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  #container {
+    background-color: #F7FAFD;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
