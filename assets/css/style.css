@@ -32,7 +32,7 @@ html {
 
 #container {
   width: 100vw;
-  max-width: 768px;
+  max-width: 732px;
   margin: auto;
   padding: 16px;
   display: flex;
@@ -52,6 +52,7 @@ html {
 #container #notifHeader div h2 {
   font-size: 20px;
   font-weight: 800;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5098039216);
 }
 #container #notifHeader div .count {
   font-size: 16px;
@@ -67,7 +68,7 @@ html {
 }
 #container #notifHeader a {
   color: #5E6778;
-  font-weight: 700;
+  font-weight: 500;
 }
 #container #notifHeader a:hover {
   color: #0A317B;
@@ -106,6 +107,7 @@ html {
   color: #1C202B;
   font-weight: 700;
   margin-right: 5px;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5098039216);
 }
 #container #notifCards .card .content p .userCard:hover {
   color: #0A317B;
@@ -115,6 +117,7 @@ html {
   color: #5E6778;
   font-weight: 700;
   margin-left: 4px;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5098039216);
 }
 #container #notifCards .card .content p .postTitle:hover {
   color: #0A317B;
@@ -123,6 +126,7 @@ html {
   color: #0A317B;
   font-weight: 800;
   margin-left: 4px;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5098039216);
 }
 #container #notifCards .card .content .timeAgo {
   color: #939DAE;
@@ -168,7 +172,7 @@ html {
   body #container {
     border: solid 1px #F3F6FA;
     border-radius: 15px;
-    padding: 10px;
+    padding: 25px 34px;
   }
   body #container #notifHeader div h2 {
     font-size: 24px;

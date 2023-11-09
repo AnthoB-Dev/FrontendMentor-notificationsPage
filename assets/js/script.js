@@ -16,7 +16,7 @@ const refreshNotifCount = function() {
 const removeMarkAsReadBtn = function() {
     const unread = document.querySelectorAll(".unread");
     if(unread.length === 0) {
-        markAllReadBtn.classList.toggle("hidden");
+        markAllReadBtn.classList.add("hidden");
     }
 }
 
