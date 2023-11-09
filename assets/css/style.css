@@ -20,11 +20,24 @@ html {
   font-family: "jakarta";
   src: url("../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
 }
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #f65351;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  box-shadow: 0 0 3px 0px rgba(255, 0, 0, 0.8392156863);
+}
+
 #container {
   width: 100vw;
+  max-width: 768px;
+  margin: auto;
   padding: 16px;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 }
 #container #notifHeader {
   display: flex;
@@ -40,7 +53,7 @@ html {
   font-size: 20px;
   font-weight: 800;
 }
-#container #notifHeader div #notifCount {
+#container #notifHeader div .count {
   font-size: 16px;
   font-weight: 800;
   width: 32px;
@@ -54,6 +67,10 @@ html {
 }
 #container #notifHeader a {
   color: #5E6778;
+  font-weight: 700;
+}
+#container #notifHeader a:hover {
+  color: #0A317B;
 }
 #container #notifCards {
   display: flex;
@@ -63,6 +80,7 @@ html {
 #container #notifCards .unread {
   background-color: #F7FAFD;
   border-radius: 10px;
+  cursor: pointer;
 }
 #container #notifCards .card {
   display: flex;
@@ -75,14 +93,31 @@ html {
   margin-right: 13px;
 }
 #container #notifCards .card .content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 3px;
+}
+#container #notifCards .card .content p {
+  color: #5E6778;
+  font-weight: 500;
+}
+#container #notifCards .card .content p .userCard {
+  color: #1C202B;
+  font-weight: 700;
+  margin-right: 5px;
+}
+#container #notifCards .card .content p .userCard:hover {
+  color: #0A317B;
+  cursor: pointer;
 }
 #container #notifCards .card .content p .postTitle {
   color: #5E6778;
   font-weight: 700;
   margin-left: 4px;
+}
+#container #notifCards .card .content p .postTitle:hover {
+  color: #0A317B;
 }
 #container #notifCards .card .content p .groupTitle {
   color: #0A317B;
@@ -96,16 +131,16 @@ html {
   margin-top: 9px;
   border: solid 1px #DDE7EE;
   border-radius: 5px;
-  padding: 10px 9px;
+  padding: 14px 15px;
 }
-
-.bold {
-  font-weight: 700;
-  margin-right: 5px;
+#container #notifCards .card .content .message:hover {
+  background-color: #E5EFFA;
+  cursor: pointer;
 }
 
 .pImage {
   display: flex;
+  justify-content: space-between;
 }
 .pImage img {
   width: 39px;
@@ -114,9 +149,40 @@ html {
   margin-left: 10px;
 }
 
+@media only screen and (min-width: 460px) {
+  .content .pImage + .timeAgo {
+    margin-top: -24px;
+  }
+}
 @media only screen and (min-width: 1024px) {
-  #container {
+  * {
+    font-size: 16px;
+  }
+  body {
     background-color: #F7FAFD;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #container {
+    border: solid 1px #F3F6FA;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  body #container #notifHeader div h2 {
+    font-size: 24px;
+  }
+  body #container #notifCards .card .profilePic {
+    width: 45px;
+    min-height: 45px;
+    max-height: 45px;
+    margin-right: 19px;
+  }
+  .pImage img {
+    width: 45px;
+    min-height: 45px;
+    max-height: 45px;
   }
 }
 
